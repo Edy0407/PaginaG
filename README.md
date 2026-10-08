@@ -13,4 +13,4 @@ Antes de publicar, reemplaza los datos de ejemplo de dirección, horario y telé
 
 ## Imágenes de productos
 
-Coloca tus cuatro fotos en una carpeta `images` junto a las páginas, con estos nombres: `pantalla.jpg`, `bateria.jpg`, `centro-de-carga.jpg` y `diagnostico.jpg`. Si tus fotos tienen otros nombres o formatos, actualiza el atributo `src` de cada imagen en `productos.html`. Mientras falte una foto, se mostrará un espacio de reemplazo.
+Las fotos de productos se guardan en la carpeta `imagenes`: `Pantalla.jpg`, `Bateria.jpg`, `CentroCarga.jpg` y `Diagnostico.jpg`. La página `productos.html` ya las enlaza; si cambias los nombres de archivo, actualiza también sus atributos `src`. Mientras falte una foto, se mostrará un espacio de reemplazo.

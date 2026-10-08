@@ -36,7 +36,7 @@ if (contactForm) {
       formData.get('message'),
     ].join('\n');
     const note = document.querySelector('#form-note');
-    window.location.href = `mailto:contacto@tulocal.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-    note.textContent = 'Si no se abre tu aplicación de correo, revisa que tengas una configurada. Actualiza contacto@tulocal.com en script.js antes de publicar.';
+    window.location.href = `mailto:hola@reparaplus.example?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    note.textContent = 'Se abrió tu aplicación de correo con una dirección de destino de ejemplo. Cámbiala por el correo del local para recibir mensajes.';
   });
 }

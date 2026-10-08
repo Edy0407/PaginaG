@@ -9,7 +9,7 @@ Sitio estático de un local de reparación de celulares. Para verlo, abre `index
 - `productos.html`: reparaciones y accesorios.
 - `contactos.html`: información y formulario de contacto.
 
-Antes de publicar, reemplaza los datos de ejemplo de dirección, horario y teléfono en `contactos.html`, y actualiza el correo `contacto@tulocal.com` en `script.js`. El formulario abre la aplicación de correo del visitante; no envía datos a un servidor.
+La página de contacto incluye nombres y datos completamente ficticios para mostrar el diseño. Antes de publicar, reemplaza nombres, dirección, horario y teléfono en `contactos.html`, y actualiza `hola@reparaplus.example` en `contactos.html` y `script.js` por el correo real del local. El formulario abre la aplicación de correo del visitante; no envía datos a un servidor.
 
 ## Imágenes de productos
 

@@ -12,6 +12,15 @@ if (menuToggle && siteMenu) {
 
 const contactForm = document.querySelector('#contact-form');
 
+document.querySelectorAll('.product-photo img').forEach((image) => {
+  const photo = image.parentElement;
+  image.addEventListener('error', () => photo.classList.add('is-empty'));
+  image.addEventListener('load', () => photo.classList.remove('is-empty'));
+  if (!image.complete || image.naturalWidth === 0) {
+    photo.classList.add('is-empty');
+  }
+});
+
 if (contactForm) {
   contactForm.addEventListener('submit', (event) => {
     event.preventDefault();
@@ -28,6 +37,6 @@ if (contactForm) {
     ].join('\n');
     const note = document.querySelector('#form-note');
     window.location.href = `mailto:contacto@tulocal.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-    note.textContent = 'Se abrió tu aplicación de correo. Actualiza contacto@tulocal.com en script.js con tu correo antes de publicar.';
+    note.textContent = 'Si no se abre tu aplicación de correo, revisa que tengas una configurada. Actualiza contacto@tulocal.com en script.js antes de publicar.';
   });
 }
